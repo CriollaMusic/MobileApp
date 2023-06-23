@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false, 
+  userApi: 'https://api.criollamusic.com/UserService/',
+  artistApi: 'https://api.criollamusic.com/ArtistService/',
+  advertisingApi: 'https://api.criollamusic.com/AdvertisingServices/',
+  playbackApi: 'https://api.criollamusic.com/StreamingService/'
 };
 
 /*

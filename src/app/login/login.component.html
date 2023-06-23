@@ -1,0 +1,36 @@
+<form [formGroup]="formGroup"  class="form">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/logo_transparent_background.png" style="width: 55vw;">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Usuario:
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <input type="email" formControlName="userName" style="width: 55vw;" />
+      </ion-col>
+    </ion-row><ion-row>
+      <ion-col>
+        Contraseña:
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <input type="password" formControlName="password" style="width: 55vw;" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="login()" style="width: 25vw;">Ingresar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style="width: 25vw;" color="danger">Salir</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</form>
