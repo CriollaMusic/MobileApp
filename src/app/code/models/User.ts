@@ -12,4 +12,6 @@ export class User extends BaseEntity {
     password!: string;
     accountType!: AccountType;
     permissions: string = '';
+    isSocial: boolean | undefined;
+    socialProvider: string | undefined;
 }

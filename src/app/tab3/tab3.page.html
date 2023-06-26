@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Mi Cuenta
+      Mi Cuenta: {{user?.firstName}} {{user?.lastName}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Mi Cuenta"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Mi Informaci&oacute;n</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="col-header">Foto:</ion-col>
+          <ion-col> <img [src]="photo"> </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="col-header">Email:</ion-col>
+          <ion-col>{{user?.email}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="col-header">Nombre:</ion-col>
+          <ion-col>{{user?.firstName}} {{user?.lastName}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="col-header">Fecha de Nacimiento:</ion-col>
+          <ion-col>{{user?.birthDate|date:'MM/dd/YYYY'}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="col-header">Tel&eacute;fono:</ion-col>
+          <ion-col>{{user?.phoneNumber}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

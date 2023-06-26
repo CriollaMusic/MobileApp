@@ -1,4 +1,4 @@
-<form [formGroup]="formGroup"  class="form">
+<form [formGroup]="formGroup" class="form">
   <ion-grid>
     <ion-row>
       <ion-col>
@@ -29,7 +29,19 @@
         <ion-button (click)="login()" style="width: 25vw;">Ingresar</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button style="width: 25vw;" color="danger">Salir</ion-button>
+        <ion-button style="width: 25vw; float: right;" color="danger">Salir</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" (click)="loginWithGoogle()">
+          <ion-icon slot="start" name="logo-google"></ion-icon> Google
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="loginWithFacebook()">
+          <ion-icon slot="start" name="logo-facebook"></ion-icon> Facebook
+        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

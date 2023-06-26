@@ -6,8 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
-import { PlayerComponent } from '../player/player.component';
 import { PlayerModule } from '../player/player.module';
+import { SocialAuthService } from 'angularx-social-login';
 
 @NgModule({
   imports: [
@@ -17,6 +17,6 @@ import { PlayerModule } from '../player/player.module';
     TabsPageRoutingModule,
     PlayerModule
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage],
 })
 export class TabsPageModule {}

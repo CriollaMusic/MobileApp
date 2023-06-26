@@ -48,6 +48,10 @@ export class UserService extends BaseService<User> {
     await this.setIpAddress(authentication);
     return this.http.post<AuthenticatedDto>(`${environment.userApi}User/authenticate`, authentication);
   }
+  
+  async authenticateSocial(authentication: User): Promise<Observable<AuthenticatedDto>> {
+    return this.http.post<AuthenticatedDto>(`${environment.userApi}User/authenticateSocial`, authentication);
+  }
 
   private async setIpAddress(authentication: AuthenticationDto) {
     try{

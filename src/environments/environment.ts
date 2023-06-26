@@ -7,7 +7,8 @@ export const environment = {
   userApi: 'https://api.criollamusic.com/UserService/',
   artistApi: 'https://api.criollamusic.com/ArtistService/',
   advertisingApi: 'https://api.criollamusic.com/AdvertisingServices/',
-  playbackApi: 'https://api.criollamusic.com/StreamingService/'
+  playbackApi: 'https://api.criollamusic.com/StreamingService/',
+  
 };
 
 /*

@@ -13,6 +13,8 @@ export class AuthenticatedDto {
     firstName!: string;
     lastName!: string;
     permissions!: string;
+    birthDate!:Date;
+    phoneNumber!:string;
     token!: Token;
 }
 
