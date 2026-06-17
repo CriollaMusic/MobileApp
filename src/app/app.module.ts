@@ -31,7 +31,7 @@ const fbLoginOptions = {
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '43814212963-edleo4ddehghkqeq0lplmltj2sir0jjr.apps.googleusercontent.com'
+              '43814212963-b58clomro65csioapdhhi8sva6rapjvs.apps.googleusercontent.com'
             )
           },
           {
